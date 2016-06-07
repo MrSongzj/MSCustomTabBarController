@@ -14,6 +14,7 @@
 		A1B53FA61D06BDC7000AC2C2 /* MSCustomTabBarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B53FA51D06BDC7000AC2C2 /* MSCustomTabBarControllerTests.m */; };
 		A1B53FB11D06BDC7000AC2C2 /* MSCustomTabBarControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B53FB01D06BDC7000AC2C2 /* MSCustomTabBarControllerUITests.m */; };
 		A1B53FC01D06BE59000AC2C2 /* MSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B53FBF1D06BE59000AC2C2 /* MSTabBarController.m */; };
+		A1B53FC31D06D8B6000AC2C2 /* MSCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B53FC21D06D8B6000AC2C2 /* MSCustomTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		A1B53FB21D06BDC7000AC2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B53FBE1D06BE59000AC2C2 /* MSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTabBarController.h; sourceTree = "<group>"; };
 		A1B53FBF1D06BE59000AC2C2 /* MSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTabBarController.m; sourceTree = "<group>"; };
+		A1B53FC11D06D8B6000AC2C2 /* MSCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCustomTabBar.h; sourceTree = "<group>"; };
+		A1B53FC21D06D8B6000AC2C2 /* MSCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCustomTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 			children = (
 				A1B53FBE1D06BE59000AC2C2 /* MSTabBarController.h */,
 				A1B53FBF1D06BE59000AC2C2 /* MSTabBarController.m */,
+				A1B53FC11D06D8B6000AC2C2 /* MSCustomTabBar.h */,
+				A1B53FC21D06D8B6000AC2C2 /* MSCustomTabBar.m */,
 				A1B53F971D06BDC7000AC2C2 /* Assets.xcassets */,
 				A1B53F991D06BDC7000AC2C2 /* LaunchScreen.storyboard */,
 				A1B53F9C1D06BDC7000AC2C2 /* Info.plist */,
@@ -268,6 +273,7 @@
 			files = (
 				A1B53F901D06BDC7000AC2C2 /* AppDelegate.m in Sources */,
 				A1B53F8D1D06BDC7000AC2C2 /* main.m in Sources */,
+				A1B53FC31D06D8B6000AC2C2 /* MSCustomTabBar.m in Sources */,
 				A1B53FC01D06BE59000AC2C2 /* MSTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

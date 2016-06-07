@@ -7,6 +7,7 @@
 //
 
 #import "MSTabBarController.h"
+#import "MSCustomTabBar.h"
 
 @interface MSTabBarController ()
 
@@ -18,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 利用KVO来使用自定义的tabBar
+    [self setValue:[[MSCustomTabBar alloc] init] forKey:@"tabBar"];
     
     [self addAllChildViewController];
 }
@@ -60,6 +63,5 @@
     
     [self addChildViewController:nav];
 }
-
 
 @end
