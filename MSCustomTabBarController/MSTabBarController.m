@@ -7,8 +7,9 @@
 //
 
 #import "MSTabBarController.h"
+#import "MSCustomTabBar.h"
 
-@interface MSTabBarController ()
+@interface MSTabBarController () <MSTabBarViewDelegate>
 
 @end
 
@@ -18,6 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 利用 KVC 来使用自定义的tabBar；
+    MSCustomTabBar *tabBar = [[MSCustomTabBar alloc] init];
+    tabBar.tabBarView.viewDelegate = self;
+    [self setValue:tabBar forKey:@"tabBar"];
     
     [self addAllChildViewController];
 }
@@ -55,10 +60,28 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     // 如果同时有navigationbar 和 tabbar的时候最好分别设置它们的title
     vc.navigationItem.title = title;
-    nav.tabBarItem.title = title;
-    nav.tabBarItem.image = [UIImage imageNamed:imageNamed];
+//    nav.tabBarItem.title = title;
+//    nav.tabBarItem.image = [UIImage imageNamed:imageNamed];
     
     [self addChildViewController:nav];
+}
+
+#pragma mark - MSCustomTabBarViewDelegate
+
+- (void)msTabBarView:(MSTabBarView *)view didSelectItemAtIndex:(NSInteger)index
+{
+    // 切换到对应index的viewController
+    self.selectedIndex = index;
+}
+
+- (void)msTabBarViewDidClickCenterItem:(MSTabBarView *)view
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"点击了中间的按钮" message:@"do something!" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alertController dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [alertController addAction:action];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 

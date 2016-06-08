@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1016EFB1D071DF5002D40C4 /* MSCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1016EFA1D071DF5002D40C4 /* MSCustomTabBar.m */; };
+		A1016EFE1D071E4B002D40C4 /* MSTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1016EFD1D071E4B002D40C4 /* MSTabBarView.m */; };
+		A1016F001D071F17002D40C4 /* MSTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1016EFF1D071F17002D40C4 /* MSTabBarView.xib */; };
+		A1016F031D07347A002D40C4 /* MSVerticalCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A1016F021D07347A002D40C4 /* MSVerticalCenterButton.m */; };
 		A1B53F8D1D06BDC7000AC2C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B53F8C1D06BDC7000AC2C2 /* main.m */; };
 		A1B53F901D06BDC7000AC2C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B53F8F1D06BDC7000AC2C2 /* AppDelegate.m */; };
 		A1B53F981D06BDC7000AC2C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B53F971D06BDC7000AC2C2 /* Assets.xcassets */; };
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1016EF91D071DF5002D40C4 /* MSCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCustomTabBar.h; sourceTree = "<group>"; };
+		A1016EFA1D071DF5002D40C4 /* MSCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCustomTabBar.m; sourceTree = "<group>"; };
+		A1016EFC1D071E4B002D40C4 /* MSTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTabBarView.h; sourceTree = "<group>"; };
+		A1016EFD1D071E4B002D40C4 /* MSTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTabBarView.m; sourceTree = "<group>"; };
+		A1016EFF1D071F17002D40C4 /* MSTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSTabBarView.xib; sourceTree = "<group>"; };
+		A1016F011D07347A002D40C4 /* MSVerticalCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSVerticalCenterButton.h; sourceTree = "<group>"; };
+		A1016F021D07347A002D40C4 /* MSVerticalCenterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSVerticalCenterButton.m; sourceTree = "<group>"; };
 		A1B53F881D06BDC7000AC2C2 /* MSCustomTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSCustomTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B53F8C1D06BDC7000AC2C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1B53F8E1D06BDC7000AC2C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +112,13 @@
 			children = (
 				A1B53FBE1D06BE59000AC2C2 /* MSTabBarController.h */,
 				A1B53FBF1D06BE59000AC2C2 /* MSTabBarController.m */,
+				A1016EF91D071DF5002D40C4 /* MSCustomTabBar.h */,
+				A1016EFA1D071DF5002D40C4 /* MSCustomTabBar.m */,
+				A1016EFC1D071E4B002D40C4 /* MSTabBarView.h */,
+				A1016EFD1D071E4B002D40C4 /* MSTabBarView.m */,
+				A1016EFF1D071F17002D40C4 /* MSTabBarView.xib */,
+				A1016F011D07347A002D40C4 /* MSVerticalCenterButton.h */,
+				A1016F021D07347A002D40C4 /* MSVerticalCenterButton.m */,
 				A1B53F971D06BDC7000AC2C2 /* Assets.xcassets */,
 				A1B53F991D06BDC7000AC2C2 /* LaunchScreen.storyboard */,
 				A1B53F9C1D06BDC7000AC2C2 /* Info.plist */,
@@ -242,6 +260,7 @@
 			files = (
 				A1B53F9B1D06BDC7000AC2C2 /* LaunchScreen.storyboard in Resources */,
 				A1B53F981D06BDC7000AC2C2 /* Assets.xcassets in Resources */,
+				A1016F001D071F17002D40C4 /* MSTabBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1016F031D07347A002D40C4 /* MSVerticalCenterButton.m in Sources */,
+				A1016EFE1D071E4B002D40C4 /* MSTabBarView.m in Sources */,
 				A1B53F901D06BDC7000AC2C2 /* AppDelegate.m in Sources */,
 				A1B53F8D1D06BDC7000AC2C2 /* main.m in Sources */,
+				A1016EFB1D071DF5002D40C4 /* MSCustomTabBar.m in Sources */,
 				A1B53FC01D06BE59000AC2C2 /* MSTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +506,7 @@
 				A1B53FB71D06BDC7000AC2C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1B53FB81D06BDC7000AC2C2 /* Build configuration list for PBXNativeTarget "MSCustomTabBarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +515,7 @@
 				A1B53FBA1D06BDC7000AC2C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1B53FBB1D06BDC7000AC2C2 /* Build configuration list for PBXNativeTarget "MSCustomTabBarControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +524,7 @@
 				A1B53FBD1D06BDC7000AC2C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
